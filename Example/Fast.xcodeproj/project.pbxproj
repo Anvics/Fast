@@ -40,7 +40,7 @@
 		607FACE51AFB9204008FA782 /* Fast_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fast_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8420C470D1CF9487537D773A /* Fast.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Fast.podspec; path = ../Fast.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8420C470D1CF9487537D773A /* FastArchitecture.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FastArchitecture.podspec; path = ../FastArchitecture.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D47CA72651EE683A4E699323 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F670C163B054DB183C2292F9 /* Pods_Fast_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fast_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,7 +136,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8420C470D1CF9487537D773A /* Fast.podspec */,
+				8420C470D1CF9487537D773A /* FastArchitecture.podspec */,
 				D47CA72651EE683A4E699323 /* README.md */,
 				37454B1A330C745724C53177 /* LICENSE */,
 			);
