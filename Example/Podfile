@@ -3,9 +3,6 @@ use_frameworks!
 target 'Fast_Example' do
   pod 'Fast', :path => '../'
 
-  target 'Fast_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'Bond'
+  
 end

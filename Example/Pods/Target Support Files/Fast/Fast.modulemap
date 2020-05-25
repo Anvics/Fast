@@ -1,0 +1,6 @@
+framework module Fast {
+  umbrella header "Fast-umbrella.h"
+
+  export *
+  module * { export * }
+}

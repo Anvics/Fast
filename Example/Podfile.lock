@@ -1,0 +1,32 @@
+PODS:
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
+  - Fast (1.0.0):
+    - Bond
+  - ReactiveKit (3.17.0)
+
+DEPENDENCIES:
+  - Bond
+  - Fast (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Bond
+    - Differ
+    - ReactiveKit
+
+EXTERNAL SOURCES:
+  Fast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  Fast: ba114ebd1c928d1fe60122fd36997de6876349d8
+  ReactiveKit: b13f4b2211c9e55f5973e587e42726ac8ba09b5d
+
+PODFILE CHECKSUM: d1cbf9c16ea14fcc3ed65b09c1dffb7e5c89b1e7
+
+COCOAPODS: 1.9.1

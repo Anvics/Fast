@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Fast'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Fast.'
+  s.version          = '1.0.0'
+  s.summary          = 'Evolution of Amber, Aurum architecture'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,20 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hip4yes/Fast'
+  s.homepage         = 'https://github.com/Anvics/Fast'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hip4yes' => 'narhipov92@gmail.com' }
-  s.source           = { :git => 'https://github.com/hip4yes/Fast.git', :tag => s.version.to_s }
+  s.author           = { 'hip4yes' => 'nikitarkhipov@gmail.com' }
+  s.source           = { :git => 'https://github.com/Anvics/Fast.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'Fast/Classes/**/*'
+  
+  s.frameworks = 'UIKit'
+  s.dependency 'Bond'
   
   # s.resource_bundles = {
   #   'Fast' => ['Fast/Assets/*.png']
