@@ -25,22 +25,22 @@
 		1AEBDE0A1703BBF39DE584A9DA22B236 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F8C19C5C2473E1C684CF7AB2511F00 /* UISearchBar.swift */; };
 		1C4AAD7A7614A80E9F7BDB70EB52F33B /* OrderedCollectionDiff+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F08BC762A12B4F08DDE03BBB313106 /* OrderedCollectionDiff+IndexPath.swift */; };
 		1EDD87D11916A866AB37CFB180E79721 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872E212E56100122C6AC092DD4385F7A /* Differ.framework */; };
-		1EDE0961247C23700080BA82 /* FastStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0950247C236F0080BA82 /* FastStore.swift */; };
-		1EDE0962247C23700080BA82 /* FastMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0951247C236F0080BA82 /* FastMiddleware.swift */; };
-		1EDE0963247C23700080BA82 /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0953247C236F0080BA82 /* ImageComponent.swift */; };
-		1EDE0964247C23700080BA82 /* AurumComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0954247C236F0080BA82 /* AurumComponent.swift */; };
-		1EDE0965247C23700080BA82 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0955247C236F0080BA82 /* ButtonComponent.swift */; };
-		1EDE0966247C23700080BA82 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0956247C236F0080BA82 /* ViewComponent.swift */; };
-		1EDE0967247C23700080BA82 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0957247C236F0080BA82 /* LabelComponent.swift */; };
-		1EDE0968247C23700080BA82 /* FastAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0958247C236F0080BA82 /* FastAnimation.swift */; };
-		1EDE0969247C23700080BA82 /* FastActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0959247C236F0080BA82 /* FastActor.swift */; };
-		1EDE096A247C23700080BA82 /* FastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095A247C236F0080BA82 /* FastController.swift */; };
-		1EDE096B247C23700080BA82 /* FastConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095B247C236F0080BA82 /* FastConfigurator.swift */; };
-		1EDE096C247C23700080BA82 /* FastReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095C247C23700080BA82 /* FastReducer.swift */; };
-		1EDE096D247C23700080BA82 /* Fast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095D247C23700080BA82 /* Fast.swift */; };
-		1EDE096E247C23700080BA82 /* FastListBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095E247C23700080BA82 /* FastListBinding.swift */; };
-		1EDE096F247C23700080BA82 /* FastBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE095F247C23700080BA82 /* FastBinding.swift */; };
-		1EDE0970247C23700080BA82 /* FastSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0960247C23700080BA82 /* FastSimulation.swift */; };
+		1EDE0982247C41350080BA82 /* FastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0971247C41350080BA82 /* FastController.swift */; };
+		1EDE0983247C41350080BA82 /* FastListBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0972247C41350080BA82 /* FastListBinding.swift */; };
+		1EDE0984247C41350080BA82 /* FastActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0973247C41350080BA82 /* FastActor.swift */; };
+		1EDE0985247C41350080BA82 /* Fast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0974247C41350080BA82 /* Fast.swift */; };
+		1EDE0986247C41350080BA82 /* FastMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0975247C41350080BA82 /* FastMiddleware.swift */; };
+		1EDE0987247C41350080BA82 /* FastSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0976247C41350080BA82 /* FastSimulation.swift */; };
+		1EDE0988247C41350080BA82 /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0978247C41350080BA82 /* ImageComponent.swift */; };
+		1EDE0989247C41350080BA82 /* AurumComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0979247C41350080BA82 /* AurumComponent.swift */; };
+		1EDE098A247C41350080BA82 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097A247C41350080BA82 /* ButtonComponent.swift */; };
+		1EDE098B247C41350080BA82 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097B247C41350080BA82 /* ViewComponent.swift */; };
+		1EDE098C247C41350080BA82 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097C247C41350080BA82 /* LabelComponent.swift */; };
+		1EDE098D247C41350080BA82 /* FastAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097D247C41350080BA82 /* FastAnimation.swift */; };
+		1EDE098E247C41350080BA82 /* FastBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097E247C41350080BA82 /* FastBinding.swift */; };
+		1EDE098F247C41350080BA82 /* FastReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097F247C41350080BA82 /* FastReducer.swift */; };
+		1EDE0990247C41350080BA82 /* FastStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0980247C41350080BA82 /* FastStore.swift */; };
+		1EDE0991247C41350080BA82 /* FastConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0981247C41350080BA82 /* FastConfigurator.swift */; };
 		1FDE321DDEC2AB7383DC6A1A12FDFE7D /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEE9F682D16A9E8FD3CC5123FB317B /* UISwitch.swift */; };
 		2288EE28CA56EA4BB6C595ED8732355E /* Differ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B41FCCD79F28BB69E9905F86E081549 /* Differ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		228902EC704723D9CC7C1DAA281CE5C7 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D1D38D6C19F65A26FEAD0A15FDD8A /* UIRefreshControl.swift */; };
@@ -256,22 +256,22 @@
 		1B41FCCD79F28BB69E9905F86E081549 /* Differ-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Differ-umbrella.h"; sourceTree = "<group>"; };
 		1CE90BDDDAC1CB4F8928EE0D4626D6B5 /* SignalProtocol+Transforming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProtocol+Transforming.swift"; path = "Sources/SignalProtocol+Transforming.swift"; sourceTree = "<group>"; };
 		1CF2098E84F3211CFD54D204C6709F45 /* Differ-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Differ-dummy.m"; sourceTree = "<group>"; };
-		1EDE0950247C236F0080BA82 /* FastStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastStore.swift; sourceTree = "<group>"; };
-		1EDE0951247C236F0080BA82 /* FastMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastMiddleware.swift; sourceTree = "<group>"; };
-		1EDE0953247C236F0080BA82 /* ImageComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
-		1EDE0954247C236F0080BA82 /* AurumComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AurumComponent.swift; sourceTree = "<group>"; };
-		1EDE0955247C236F0080BA82 /* ButtonComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
-		1EDE0956247C236F0080BA82 /* ViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
-		1EDE0957247C236F0080BA82 /* LabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
-		1EDE0958247C236F0080BA82 /* FastAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastAnimation.swift; sourceTree = "<group>"; };
-		1EDE0959247C236F0080BA82 /* FastActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastActor.swift; sourceTree = "<group>"; };
-		1EDE095A247C236F0080BA82 /* FastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastController.swift; sourceTree = "<group>"; };
-		1EDE095B247C236F0080BA82 /* FastConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastConfigurator.swift; sourceTree = "<group>"; };
-		1EDE095C247C23700080BA82 /* FastReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastReducer.swift; sourceTree = "<group>"; };
-		1EDE095D247C23700080BA82 /* Fast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fast.swift; sourceTree = "<group>"; };
-		1EDE095E247C23700080BA82 /* FastListBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastListBinding.swift; sourceTree = "<group>"; };
-		1EDE095F247C23700080BA82 /* FastBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastBinding.swift; sourceTree = "<group>"; };
-		1EDE0960247C23700080BA82 /* FastSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastSimulation.swift; sourceTree = "<group>"; };
+		1EDE0971247C41350080BA82 /* FastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastController.swift; path = Fast/Classes/FastController.swift; sourceTree = "<group>"; };
+		1EDE0972247C41350080BA82 /* FastListBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastListBinding.swift; path = Fast/Classes/FastListBinding.swift; sourceTree = "<group>"; };
+		1EDE0973247C41350080BA82 /* FastActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastActor.swift; path = Fast/Classes/FastActor.swift; sourceTree = "<group>"; };
+		1EDE0974247C41350080BA82 /* Fast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fast.swift; path = Fast/Classes/Fast.swift; sourceTree = "<group>"; };
+		1EDE0975247C41350080BA82 /* FastMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastMiddleware.swift; path = Fast/Classes/FastMiddleware.swift; sourceTree = "<group>"; };
+		1EDE0976247C41350080BA82 /* FastSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastSimulation.swift; path = Fast/Classes/FastSimulation.swift; sourceTree = "<group>"; };
+		1EDE0978247C41350080BA82 /* ImageComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
+		1EDE0979247C41350080BA82 /* AurumComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AurumComponent.swift; sourceTree = "<group>"; };
+		1EDE097A247C41350080BA82 /* ButtonComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
+		1EDE097B247C41350080BA82 /* ViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
+		1EDE097C247C41350080BA82 /* LabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
+		1EDE097D247C41350080BA82 /* FastAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastAnimation.swift; path = Fast/Classes/FastAnimation.swift; sourceTree = "<group>"; };
+		1EDE097E247C41350080BA82 /* FastBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastBinding.swift; path = Fast/Classes/FastBinding.swift; sourceTree = "<group>"; };
+		1EDE097F247C41350080BA82 /* FastReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastReducer.swift; path = Fast/Classes/FastReducer.swift; sourceTree = "<group>"; };
+		1EDE0980247C41350080BA82 /* FastStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastStore.swift; path = Fast/Classes/FastStore.swift; sourceTree = "<group>"; };
+		1EDE0981247C41350080BA82 /* FastConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastConfigurator.swift; path = Fast/Classes/FastConfigurator.swift; sourceTree = "<group>"; };
 		206334034BB62E92FEAA6A618BD5918F /* SectionedDataSourceChangesetConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedDataSourceChangesetConvertible.swift; path = "Sources/Bond/Data Sources/SectionedDataSourceChangesetConvertible.swift"; sourceTree = "<group>"; };
 		21CDBB80371004DD11FC4271FD5A4909 /* OrderedCollectionDiff+Strideable+Patch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OrderedCollectionDiff+Strideable+Patch.swift"; path = "Sources/Bond/Observable Collections/OrderedCollectionDiff+Strideable+Patch.swift"; sourceTree = "<group>"; };
 		24A8AAC0AB2A452D47EFD48DD0DEA582 /* IndexPath+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IndexPath+Bond.swift"; path = "Sources/Bond/Data Structures/IndexPath+Bond.swift"; sourceTree = "<group>"; };
@@ -519,16 +519,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1EDE0952247C236F0080BA82 /* Components */ = {
+		1EDE0977247C41350080BA82 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1EDE0953247C236F0080BA82 /* ImageComponent.swift */,
-				1EDE0954247C236F0080BA82 /* AurumComponent.swift */,
-				1EDE0955247C236F0080BA82 /* ButtonComponent.swift */,
-				1EDE0956247C236F0080BA82 /* ViewComponent.swift */,
-				1EDE0957247C236F0080BA82 /* LabelComponent.swift */,
+				1EDE0978247C41350080BA82 /* ImageComponent.swift */,
+				1EDE0979247C41350080BA82 /* AurumComponent.swift */,
+				1EDE097A247C41350080BA82 /* ButtonComponent.swift */,
+				1EDE097B247C41350080BA82 /* ViewComponent.swift */,
+				1EDE097C247C41350080BA82 /* LabelComponent.swift */,
 			);
-			path = Components;
+			name = Components;
+			path = Fast/Classes/Components;
 			sourceTree = "<group>";
 		};
 		2ECD557712CD71488663E1ED0FA6C51D /* Targets Support Files */ = {
@@ -758,18 +759,18 @@
 		EDBE9C457E0F93E7E130D29AB4C0E7C8 /* Fast */ = {
 			isa = PBXGroup;
 			children = (
-				1EDE095D247C23700080BA82 /* Fast.swift */,
-				1EDE0959247C236F0080BA82 /* FastActor.swift */,
-				1EDE0958247C236F0080BA82 /* FastAnimation.swift */,
-				1EDE095F247C23700080BA82 /* FastBinding.swift */,
-				1EDE095A247C236F0080BA82 /* FastController.swift */,
-				1EDE095E247C23700080BA82 /* FastListBinding.swift */,
-				1EDE0951247C236F0080BA82 /* FastMiddleware.swift */,
-				1EDE095B247C236F0080BA82 /* FastConfigurator.swift */,
-				1EDE095C247C23700080BA82 /* FastReducer.swift */,
-				1EDE0960247C23700080BA82 /* FastSimulation.swift */,
-				1EDE0950247C236F0080BA82 /* FastStore.swift */,
-				1EDE0952247C236F0080BA82 /* Components */,
+				1EDE0977247C41350080BA82 /* Components */,
+				1EDE0974247C41350080BA82 /* Fast.swift */,
+				1EDE0973247C41350080BA82 /* FastActor.swift */,
+				1EDE097D247C41350080BA82 /* FastAnimation.swift */,
+				1EDE097E247C41350080BA82 /* FastBinding.swift */,
+				1EDE0981247C41350080BA82 /* FastConfigurator.swift */,
+				1EDE0971247C41350080BA82 /* FastController.swift */,
+				1EDE0972247C41350080BA82 /* FastListBinding.swift */,
+				1EDE0975247C41350080BA82 /* FastMiddleware.swift */,
+				1EDE097F247C41350080BA82 /* FastReducer.swift */,
+				1EDE0976247C41350080BA82 /* FastSimulation.swift */,
+				1EDE0980247C41350080BA82 /* FastStore.swift */,
 				69C5A17469B640F80485D8D2EACC6C86 /* Pod */,
 				498D0FEAE788FC354BFC2F2DFB8FD899 /* Support Files */,
 			);
@@ -1157,23 +1158,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EDE0969247C23700080BA82 /* FastActor.swift in Sources */,
-				1EDE0961247C23700080BA82 /* FastStore.swift in Sources */,
-				1EDE0970247C23700080BA82 /* FastSimulation.swift in Sources */,
-				1EDE096F247C23700080BA82 /* FastBinding.swift in Sources */,
-				1EDE0965247C23700080BA82 /* ButtonComponent.swift in Sources */,
-				1EDE096B247C23700080BA82 /* FastConfigurator.swift in Sources */,
-				1EDE0967247C23700080BA82 /* LabelComponent.swift in Sources */,
-				1EDE096A247C23700080BA82 /* FastController.swift in Sources */,
-				1EDE0963247C23700080BA82 /* ImageComponent.swift in Sources */,
-				1EDE0962247C23700080BA82 /* FastMiddleware.swift in Sources */,
-				1EDE096C247C23700080BA82 /* FastReducer.swift in Sources */,
-				1EDE096E247C23700080BA82 /* FastListBinding.swift in Sources */,
-				1EDE0964247C23700080BA82 /* AurumComponent.swift in Sources */,
-				1EDE096D247C23700080BA82 /* Fast.swift in Sources */,
-				1EDE0966247C23700080BA82 /* ViewComponent.swift in Sources */,
-				1EDE0968247C23700080BA82 /* FastAnimation.swift in Sources */,
+				1EDE0987247C41350080BA82 /* FastSimulation.swift in Sources */,
+				1EDE098A247C41350080BA82 /* ButtonComponent.swift in Sources */,
+				1EDE098C247C41350080BA82 /* LabelComponent.swift in Sources */,
+				1EDE098E247C41350080BA82 /* FastBinding.swift in Sources */,
 				F62CC0417269F77242AC754966C23B22 /* Fast-dummy.m in Sources */,
+				1EDE0990247C41350080BA82 /* FastStore.swift in Sources */,
+				1EDE0991247C41350080BA82 /* FastConfigurator.swift in Sources */,
+				1EDE098F247C41350080BA82 /* FastReducer.swift in Sources */,
+				1EDE0986247C41350080BA82 /* FastMiddleware.swift in Sources */,
+				1EDE0985247C41350080BA82 /* Fast.swift in Sources */,
+				1EDE0984247C41350080BA82 /* FastActor.swift in Sources */,
+				1EDE0988247C41350080BA82 /* ImageComponent.swift in Sources */,
+				1EDE098D247C41350080BA82 /* FastAnimation.swift in Sources */,
+				1EDE0982247C41350080BA82 /* FastController.swift in Sources */,
+				1EDE0983247C41350080BA82 /* FastListBinding.swift in Sources */,
+				1EDE0989247C41350080BA82 /* AurumComponent.swift in Sources */,
+				1EDE098B247C41350080BA82 /* ViewComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
