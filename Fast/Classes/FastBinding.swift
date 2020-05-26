@@ -175,3 +175,7 @@ infix operator **>: MultiplicationPrecedence
 public func **><S, C: FastComponent, A>(left: C, right: @escaping (inout S, C.Signal.Element) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State{
     return FastComponentBinding(component: left, action: { e in A.dynamic { s in right(&s, e) } })
 }
+
+public func **><S, C: FastComponent, A>(left: C, right: @escaping (inout S) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State, C.Signal.Element == Void{
+    return FastComponentBinding(component: left, action: { _ in A.dynamic { s in right(&s) } })
+}
