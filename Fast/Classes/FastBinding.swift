@@ -166,7 +166,7 @@ public func *><S, C: FastComponent, A>(left: FastComponentBinding<S, C, A>, righ
 public protocol FastDynamicAction{
     associatedtype State
     
-    static func dynamic(changeState: (inout State) -> Void) -> Self
+    static func dynamic(changeState: @escaping (inout State) -> Void) -> Self
 }
 
 
@@ -178,4 +178,14 @@ public func **><S, C: FastComponent, A>(left: C, right: @escaping (inout S, C.Si
 
 public func **><S, C: FastComponent, A>(left: C, right: @escaping (inout S) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State, C.Signal.Element == Void{
     return FastComponentBinding(component: left, action: { _ in A.dynamic { s in right(&s) } })
+}
+
+public func *><S, C: FastComponent, A>(left: FastComponentBinding<S, C, A>, right: @escaping (inout S, C.Signal.Element) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State{
+    left.action = { e in A.dynamic { s in right(&s, e) } }
+    return left
+}
+
+public func *><S, C: FastComponent, A>(left: FastComponentBinding<S, C, A>, right: @escaping (inout S) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State, C.Signal.Element == Void{
+    left.action = { _ in A.dynamic { s in right(&s) } }
+    return left
 }
