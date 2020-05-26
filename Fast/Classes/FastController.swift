@@ -21,12 +21,14 @@ public protocol FastController: class, FastStoreSetupable {
     associatedtype State
     associatedtype Action
     
+    typealias Binds = FastBindings<State, Action>
+    
     var store: FastStore<State, Action>! { get set }
-    var bindings: FastBindings<State, Action> { get }
+    var bindings: Binds { get }
 }
 
 public extension FastController{
-    var bindings: FastBindings<State, Action> { return FastBindings<State, Action>() }
+    var bindings: Binds { Binds() }
     
     func set<S, A>(store: FastStore<S, A>){
         guard let s = store as? FastStore<State, Action> else { fatalError("\(type(of: self)) failed to set store: expected <\(State.self), \(Action.self)> got <\(S.self), \(A.self)>") }

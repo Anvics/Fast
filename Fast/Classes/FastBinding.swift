@@ -160,3 +160,18 @@ public func *><S, C: FastComponent, A>(left: FastComponentBinding<S, C, A>, righ
     return left
 }
 
+
+
+//Dynamic actions
+public protocol FastDynamicAction{
+    associatedtype State
+    
+    static func dynamic(changeState: (inout State) -> Void) -> Self
+}
+
+
+infix operator **>: MultiplicationPrecedence
+
+public func **><S, C: FastComponent, A>(left: C, right: @escaping (inout S, C.Signal.Element) -> Void) -> FastBinding<S, A> where A: FastDynamicAction, S == A.State{
+    return FastComponentBinding(component: left, action: { e in A.dynamic { s in right(&s, e) } })
+}
