@@ -19,8 +19,8 @@ public class FastStore<State, Action>{
     public let state: Property<State>
     public let reducer = SafeReplayOneSubject<Action>()
     
-    let didAppeared: () -> Void
-    let deinitialize: () -> Void
+    public let didAppeared: () -> Void
+    public let deinitialize: () -> Void
 
     private let reduceAction: (Action) -> Void
     
