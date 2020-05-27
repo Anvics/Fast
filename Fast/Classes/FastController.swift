@@ -63,6 +63,12 @@ public extension FastController{
     func reduce(action: Action){
         store.reduce(action: action)
     }
+    
+    func component<Module: FastConfigurator>(module: Module.Type, data: Module.RequiredData, transition: FastTransitionType) -> FastModuleComponent<Module>{
+        let component = FastModuleComponent(module: module)
+        component.input = store.router.route(module: module, data: data, transition: transition, animated: true, outputListener: component.event.next).inputActionListener
+        return component
+    }
 }
 
 private var UIView_Associated_Embeded: UInt8 = 0

@@ -9,12 +9,6 @@ import Foundation
 import ReactiveKit
 import Bond
 
-public protocol FastComponentData: Equatable {
-    associatedtype Component: FastBaseComponent
-    
-    func update(component: Component)
-}
-
 public func resolve<T>(_ value: T?, resolver: (T) -> Void){
     if let v = value { resolver(v) }
 }
@@ -24,28 +18,47 @@ public protocol FastDataCreatable {
     init(data: Data?)
 }
 
-public protocol FastBaseComponent: NSObjectProtocol {
-    associatedtype BaseData: FastComponentData where BaseData.Component == Self
+public protocol FastBaseComponent: FastAnimatableComponent {
+    associatedtype BaseData: Equatable
+    
+    func baseUpdate(data: BaseData)
 }
 
-public protocol FastComponent: FastBaseComponent {
-    associatedtype Data: FastComponentData where Data.Component == Self
+public protocol FastComponent: FastAnimatableComponent {
+    associatedtype Data: Equatable
     associatedtype Signal: SignalProtocol where Signal.Error == Never
+    
     var event: Signal { get }
+    
+    func update(data: Data)
+}
+
+
+public class FastModuleComponent<Module: FastConfigurator>: FastComponent{
+    public let event = SafeReplayOneSubject<Module.OutputAction>()
+    
+    typealias Input = (Module.InputAction) -> Void
+    typealias Output = (Module.OutputAction) -> Void
+    
+    var input: Input?
+    
+    init(module: Module.Type) { }
+    
+    public func update(data: Module.InputAction) {
+        input?(data)
+    }
 }
 
 struct FastComponentKeys {
     static var Animation = "Animation"
 }
 
-public extension FastBaseComponent{
+public protocol FastAnimatableComponent: class{ }
+
+public extension FastAnimatableComponent{
     func with(_ animation: FastAnimation) -> Self{
         self.animation = animation
         return self
-    }
-    
-    func baseUpdate(data: BaseData){
-        data.update(component: self)
     }
     
     var animation: FastAnimation? {
@@ -56,11 +69,5 @@ public extension FastBaseComponent{
         set {
             objc_setAssociatedObject(self, &FastComponentKeys.Animation, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
-    }
-}
-
-public extension FastComponent{
-    func update(data: Data){
-        data.update(component: self)
     }
 }

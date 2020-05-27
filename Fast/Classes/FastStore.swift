@@ -18,6 +18,7 @@ public protocol FastState {
 public class FastStore<State, Action>{
     public let state: Property<State>
     public let reducer = SafeReplayOneSubject<Action>()
+    public let router: FastRouter
     
     public let didAppeared: () -> Void
     public let deinitialize: () -> Void
@@ -26,6 +27,7 @@ public class FastStore<State, Action>{
     
     init<InputAction, OutputAction>(performer: FastStorePerformer<State, Action, InputAction, OutputAction>){
         state = performer.state
+        router = performer.actor
         didAppeared = performer.didAppeared
         deinitialize = performer.deinitalize
         reduceAction = performer.reduce

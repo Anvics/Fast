@@ -8,12 +8,16 @@
 
 import UIKit
 
+public class FastEmptyAction: Equatable{
+    public static func ==(lhs: FastEmptyAction, rhs: FastEmptyAction) -> Bool { true }
+}
+
 public protocol FastConfigurator {
     associatedtype RequiredData
     associatedtype State: FastState
     associatedtype Action
-    associatedtype InputAction
-    associatedtype OutputAction
+    associatedtype InputAction: Equatable
+    associatedtype OutputAction: Equatable
     
     typealias Actor = FastActor<Action, InputAction, OutputAction>
     typealias Reducer = FastReducerWrapper<State, Action, InputAction, OutputAction>

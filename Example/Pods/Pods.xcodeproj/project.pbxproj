@@ -32,7 +32,7 @@
 		1EDE0986247C41350080BA82 /* FastMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0975247C41350080BA82 /* FastMiddleware.swift */; };
 		1EDE0987247C41350080BA82 /* FastSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0976247C41350080BA82 /* FastSimulation.swift */; };
 		1EDE0988247C41350080BA82 /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0978247C41350080BA82 /* ImageComponent.swift */; };
-		1EDE0989247C41350080BA82 /* AurumComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0979247C41350080BA82 /* AurumComponent.swift */; };
+		1EDE0989247C41350080BA82 /* FastComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE0979247C41350080BA82 /* FastComponent.swift */; };
 		1EDE098A247C41350080BA82 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097A247C41350080BA82 /* ButtonComponent.swift */; };
 		1EDE098B247C41350080BA82 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097B247C41350080BA82 /* ViewComponent.swift */; };
 		1EDE098C247C41350080BA82 /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE097C247C41350080BA82 /* LabelComponent.swift */; };
@@ -263,7 +263,7 @@
 		1EDE0975247C41350080BA82 /* FastMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastMiddleware.swift; path = Fast/Classes/FastMiddleware.swift; sourceTree = "<group>"; };
 		1EDE0976247C41350080BA82 /* FastSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastSimulation.swift; path = Fast/Classes/FastSimulation.swift; sourceTree = "<group>"; };
 		1EDE0978247C41350080BA82 /* ImageComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
-		1EDE0979247C41350080BA82 /* AurumComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AurumComponent.swift; sourceTree = "<group>"; };
+		1EDE0979247C41350080BA82 /* FastComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastComponent.swift; sourceTree = "<group>"; };
 		1EDE097A247C41350080BA82 /* ButtonComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		1EDE097B247C41350080BA82 /* ViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
 		1EDE097C247C41350080BA82 /* LabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
@@ -522,8 +522,8 @@
 		1EDE0977247C41350080BA82 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1EDE0979247C41350080BA82 /* FastComponent.swift */,
 				1EDE0978247C41350080BA82 /* ImageComponent.swift */,
-				1EDE0979247C41350080BA82 /* AurumComponent.swift */,
 				1EDE097A247C41350080BA82 /* ButtonComponent.swift */,
 				1EDE097B247C41350080BA82 /* ViewComponent.swift */,
 				1EDE097C247C41350080BA82 /* LabelComponent.swift */,
@@ -1173,7 +1173,7 @@
 				1EDE098D247C41350080BA82 /* FastAnimation.swift in Sources */,
 				1EDE0982247C41350080BA82 /* FastController.swift in Sources */,
 				1EDE0983247C41350080BA82 /* FastListBinding.swift in Sources */,
-				1EDE0989247C41350080BA82 /* AurumComponent.swift in Sources */,
+				1EDE0989247C41350080BA82 /* FastComponent.swift in Sources */,
 				1EDE098B247C41350080BA82 /* ViewComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -75,8 +75,6 @@ public class FastComponentBinding<S, C: FastComponent, A>: FastBinding<S, A>{
     }
 }
 
-
-
 public extension Array{
     func bindings<S, A>() -> FastBindings<S, A> where Element == FastBinding<S, A>{
         return FastBindings(self)
@@ -159,7 +157,6 @@ public func *><S, C: FastComponent, A>(left: FastComponentBinding<S, C, A>, righ
     left.action = { _ in right }
     return left
 }
-
 
 
 //Dynamic actions

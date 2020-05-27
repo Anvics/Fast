@@ -9,7 +9,7 @@ import UIKit
 import ReactiveKit
 import Bond
 
-public class ViewData: FastComponentData, FastDataCreatable{
+public class ViewData: FastDataCreatable, Equatable{
 
     let backgroundColor: UIColor?
     let alpha: CGFloat?
@@ -27,13 +27,6 @@ public class ViewData: FastComponentData, FastDataCreatable{
         self.alpha = alpha
         self.isHidden = isHidden
     }
-    
-    public func update(component: UIView){
-        let c = component
-        resolve(backgroundColor) { c.backgroundColor = $0 }
-        resolve(alpha) { c.alpha = $0 }
-        resolve(isHidden) { c.isHidden = $0 }
-    }
 }
 
 public func ==(left: ViewData, right: ViewData) -> Bool{
@@ -43,7 +36,15 @@ public func ==(left: ViewData, right: ViewData) -> Bool{
 }
 
 extension UIView: FastBaseComponent{
-    public typealias BaseData = ViewData
+    public func baseUpdate(data: ViewData) {
+        resolve(data.backgroundColor) { self.backgroundColor = $0 }
+        resolve(data.alpha) { self.alpha = $0 }
+        resolve(data.isHidden) { self.isHidden = $0 }
+    }
+    
+    public func baseUpdate(with: ViewData?){
+        if let d = with { baseUpdate(data: d) }
+    }
 }
 
 extension Bool{

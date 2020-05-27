@@ -63,6 +63,6 @@ public class FastReducerWrapper<State, Action, InputAction, OutputAction>{
         middleware = reducer.middleware
 
         reduce = reducer.reduce
-        reduceInput = reducer.reduceInput        
+        reduceInput = reducer.reduceInput
     }
 }
