@@ -21,7 +21,8 @@ public protocol FastConfigurator {
     
     typealias Actor = FastActor<Action, InputAction, OutputAction>
     typealias Reducer = FastReducerWrapper<State, Action, InputAction, OutputAction>
-    
+    typealias InputActionListener = (InputAction) -> Void
+
     init()
             
     func reducer(data: RequiredData) -> Reducer

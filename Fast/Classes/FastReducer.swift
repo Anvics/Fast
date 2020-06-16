@@ -22,7 +22,7 @@ public protocol FastReducer {
     
     func deinitialize()
 
-    func middleware(state: State, action: Action) -> [FastMiddleware]
+    func middleware(state: State, action: Action, actor: Actor) -> [FastMiddleware]
 
     func reduce(state: State, action: Action, actor: Actor) -> State?
     func reduceInput(state: State, action: InputAction, actor: Actor) -> State?
@@ -49,7 +49,7 @@ public class FastReducerWrapper<State, Action, InputAction, OutputAction>{
     let didAppeared: (State, Actor) -> State?
     let deinitialize: () -> Void
     
-    let middleware: (State, Action) -> [FastMiddleware]
+    let middleware: (State, Action, Actor) -> [FastMiddleware]
 
     let reduce: (State, Action, Actor) -> State?
     let reduceInput: (State, InputAction, Actor) -> State?
@@ -66,3 +66,4 @@ public class FastReducerWrapper<State, Action, InputAction, OutputAction>{
         reduceInput = reducer.reduceInput
     }
 }
+

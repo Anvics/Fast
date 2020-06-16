@@ -55,8 +55,8 @@ public class FastModuleData<A>{
 }
 
 public class FastRouter{
-    fileprivate weak var rootController: UIViewController?
-    fileprivate weak var controller: UIViewController?
+    public weak var rootController: UIViewController?
+    public weak var controller: UIViewController?
     
     init(rootController: UIViewController?, controller: UIViewController?) {
         self.rootController = rootController ?? controller

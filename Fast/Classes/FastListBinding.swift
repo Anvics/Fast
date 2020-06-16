@@ -191,6 +191,7 @@ public class FastSectionTableConnector<Section: Equatable, Item: Equatable, Sect
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         cellPressed?(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

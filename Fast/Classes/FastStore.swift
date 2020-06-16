@@ -68,9 +68,9 @@ public class FastStorePerformer<State, Action, InputAction, OutputAction>{
         reducer.initialize(state, actor)
     }
 
-    private func performReduction<A>(action: A, provider: (State, A) -> [FastMiddleware], reducer: (State, A, Actor) -> State?){
+    private func performReduction<A>(action: A, provider: (State, A, Actor) -> [FastMiddleware], reducer: @escaping (State, A, Actor) -> State?){
         Fast.toggled(action: action)
-        let m = provider(state.value, action)
+        let m = provider(state.value, action, actor)
 
         func complete(){
             if let s = reducer(state.value, action, actor){
@@ -93,7 +93,7 @@ public class FastStorePerformer<State, Action, InputAction, OutputAction>{
     }
 
     func inputReduce(action: InputAction){
-        performReduction(action: action, provider: { _, _ in [] }, reducer: reducer.reduceInput)
+        performReduction(action: action, provider: { _, _, _ in [] }, reducer: reducer.reduceInput)
     }
 
     private func outputReduce(action: OutputAction){

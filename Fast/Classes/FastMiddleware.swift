@@ -13,15 +13,15 @@ public typealias EmptyClosure = () -> Void
 public protocol FastMiddleware {
     func preprocess()
     
-    func process(router: FastRouter, complete: EmptyClosure)
+    func process(router: FastRouter, complete: @escaping EmptyClosure)
     
     func postprocess()
 }
 
-extension FastMiddleware{
+public extension FastMiddleware{
     func preprocess(){}
     
-    func process(router: FastRouter, complete: EmptyClosure){ complete() }
+    func process(router: FastRouter, complete: @escaping EmptyClosure){ complete() }
     
     func postprocess(){}
 }
