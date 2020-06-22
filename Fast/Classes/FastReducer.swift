@@ -39,7 +39,7 @@ extension FastReducer{
         return FastReducerWrapper(reducer: self)
     }
     
-    public func middleware(state: State, action: Action) -> [FastMiddleware] { return [] }
+    public func middleware(state: State, action: Action, actor: Actor) -> [FastMiddleware] { return [] }
 }
 
 public class FastReducerWrapper<State, Action, InputAction, OutputAction>{

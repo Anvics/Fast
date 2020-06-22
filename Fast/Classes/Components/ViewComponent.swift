@@ -14,18 +14,21 @@ public class ViewData: FastDataCreatable, Equatable{
     let backgroundColor: UIColor?
     let alpha: CGFloat?
     let isHidden: Bool?
+    let frame: CGRect?
     
     ///data = isVisible
     required public init(data: Bool?){
         self.backgroundColor = nil
         self.alpha = data?.cgfloat
         self.isHidden = nil
+        self.frame = nil
     }
     
-    public init(backgroundColor: UIColor? = nil, alpha: CGFloat? = nil, isHidden: Bool? = nil) {
+    public init(backgroundColor: UIColor? = nil, alpha: CGFloat? = nil, isHidden: Bool? = nil, frame: CGRect? = nil) {
         self.backgroundColor = backgroundColor
         self.alpha = alpha
         self.isHidden = isHidden
+        self.frame = frame
     }
 }
 
@@ -40,6 +43,7 @@ extension UIView: FastBaseComponent{
         resolve(data.backgroundColor) { self.backgroundColor = $0 }
         resolve(data.alpha) { self.alpha = $0 }
         resolve(data.isHidden) { self.isHidden = $0 }
+        resolve(data.frame) { self.frame = $0 }
     }
     
     public func baseUpdate(with: ViewData?){
