@@ -55,6 +55,8 @@ public class FastStorePerformer<State, Action, InputAction, OutputAction>{
     typealias Reducer = FastReducerWrapper<State, Action, InputAction, OutputAction>
     
     private var reducer: Reducer
+    
+    var updateState: (State, State) -> Void = { _, _ in }
 
     lazy var actor: Actor = { Actor(rootController: rootController, controller: controller, reducer: reduce, inputReducer: inputReduce, outputReducer: outputReduce) }()
 
@@ -74,8 +76,10 @@ public class FastStorePerformer<State, Action, InputAction, OutputAction>{
 
         func complete(){
             if let s = reducer(state.value, action, actor){
+                let oldValue = state.value
                 state.value = s
                 m.forEach { $0.postprocess() }
+                updateState(oldValue, s)
             }
         }
 

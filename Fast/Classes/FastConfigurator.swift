@@ -43,6 +43,7 @@ public extension FastConfigurator{
         guard let vcs = vc as? FastStoreSetupable else { fatalError("\(type(of: vc)) does not conforms to FastController") }
         
         vcs.set(store: st.wrapped())
+        st.updateState = vcs.updateStateListener()
 
         _ = vc.view//hack to force load view
 

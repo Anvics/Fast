@@ -15,6 +15,8 @@ public protocol FastStoreSetupable {
     
     func set<S, A>(store: FastStore<S, A>)
     func setupBindings()
+    
+    func updateStateListener<S>() -> (S, S) -> Void
 }
 
 public protocol FastController: class, FastStoreSetupable {
@@ -25,6 +27,8 @@ public protocol FastController: class, FastStoreSetupable {
     
     var store: FastStore<State, Action>! { get set }
     var bindings: Binds { get }
+    
+    func stateUpdated(from: State, to: State)
 }
 
 public extension FastController{
@@ -37,6 +41,15 @@ public extension FastController{
     
     func setupBindings() {
         bindings.setup(store: store)
+    }
+    
+    func stateUpdated(from: State, to: State){ }
+    
+    func updateStateListener<S>() -> (S, S) -> Void {
+        return { [weak self] s1, s2 in
+            guard let s1 = s1 as? State, let s2 = s2 as? State else { fatalError() }
+            self?.stateUpdated(from: s1, to: s2)
+        }
     }
 }
 
