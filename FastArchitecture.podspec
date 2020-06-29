@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FastArchitecture'
-  s.version          = '1.3.2'
+  s.version          = '1.4.0'
   s.summary          = 'Evolution of Amber, Aurum architecture'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,7 @@ TODO: Add long description of the pod here.
   
   s.frameworks = 'UIKit'
   s.dependency 'Bond'
+  s.dependency 'Kingfisher'
   
   # s.resource_bundles = {
   #   'Fast' => ['Fast/Assets/*.png']

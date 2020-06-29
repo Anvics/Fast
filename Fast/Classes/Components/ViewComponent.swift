@@ -40,10 +40,10 @@ public func ==(left: ViewData, right: ViewData) -> Bool{
 
 extension UIView: FastBaseComponent{
     public func baseUpdate(data: ViewData) {
-        resolve(data.backgroundColor) { self.backgroundColor = $0 }
-        resolve(data.alpha) { self.alpha = $0 }
-        resolve(data.isHidden) { self.isHidden = $0 }
-        resolve(data.frame) { self.frame = $0 }
+        resolve(data.backgroundColor) { backgroundColor = $0 }
+        resolve(data.alpha) { alpha = $0 }
+        resolve(data.isHidden) { isHidden = $0 }
+        resolve(data.frame) { frame = $0 }
     }
     
     public func baseUpdate(with: ViewData?){

@@ -1,5 +1,5 @@
 import XCTest
-import Fast
+//import Fast
 
 class Tests: XCTestCase {
     

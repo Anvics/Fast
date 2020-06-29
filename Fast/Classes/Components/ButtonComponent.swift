@@ -47,16 +47,16 @@ public func ==(left: ButtonData, right: ButtonData) -> Bool{
 
 extension UIButton: FastComponent{
     public typealias ProducedData = Void
-    public var event: SafeSignal<ProducedData> { return reactive.tap }
+    public var event: SafeSignal<ProducedData> { reactive.tap }
     
     public func update(data: ButtonData) {
-        resolve(data.title) { self.setTitle($0, for: .normal) }
-        resolve(data.titleColor) { self.setTitleColor($0, for: .normal) }
-        resolve(data.image) { self.setImage($0, for: .normal) }
-        resolve(data.backgroundImage) { self.setBackgroundImage($0, for: .normal) }
+        resolve(data.title) { setTitle($0, for: .normal) }
+        resolve(data.titleColor) { setTitleColor($0, for: .normal) }
+        resolve(data.image) { setImage($0, for: .normal) }
+        resolve(data.backgroundImage) { setBackgroundImage($0, for: .normal) }
         resolve(data.isEnabled) {
-            self.isEnabled = $0
-            if self.alpha == nil { self.alpha = $0 ? 1 : 0.5 }
+            isEnabled = $0
+            if data.viewData?.alpha == nil { alpha = $0 ? 1 : 0.5 }
         }
         baseUpdate(with: data.viewData)
     }

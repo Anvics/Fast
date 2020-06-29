@@ -1,8 +1,11 @@
 use_frameworks!
 
+platform :ios, '10.0'
+
 target 'Fast_Example' do
-  pod 'Fast', :path => '../'
+  pod 'FastArchitecture', :path => '../'
 
   pod 'Bond'
+  pod 'Kingfisher'
   
 end

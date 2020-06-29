@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double FastVersionNumber;
-FOUNDATION_EXPORT const unsigned char FastVersionString[];
+FOUNDATION_EXPORT double FastArchitectureVersionNumber;
+FOUNDATION_EXPORT const unsigned char FastArchitectureVersionString[];
 

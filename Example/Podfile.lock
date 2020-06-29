@@ -3,30 +3,35 @@ PODS:
     - Differ (~> 1.4)
     - ReactiveKit (~> 3.14)
   - Differ (1.4.5)
-  - Fast (1.0.0):
+  - FastArchitecture (1.4.0):
     - Bond
+    - Kingfisher
+  - Kingfisher (4.10.1)
   - ReactiveKit (3.17.0)
 
 DEPENDENCIES:
   - Bond
-  - Fast (from `../`)
+  - FastArchitecture (from `../`)
+  - Kingfisher
 
 SPEC REPOS:
   trunk:
     - Bond
     - Differ
+    - Kingfisher
     - ReactiveKit
 
 EXTERNAL SOURCES:
-  Fast:
+  FastArchitecture:
     :path: "../"
 
 SPEC CHECKSUMS:
   Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
   Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
-  Fast: ba114ebd1c928d1fe60122fd36997de6876349d8
+  FastArchitecture: 01bc64b6e38a8a286c6da64bd527f8d1ada14d81
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   ReactiveKit: b13f4b2211c9e55f5973e587e42726ac8ba09b5d
 
-PODFILE CHECKSUM: d1cbf9c16ea14fcc3ed65b09c1dffb7e5c89b1e7
+PODFILE CHECKSUM: 5c7c5f34c419fd3f0ed6677f9e19c7f1a2bcf5d5
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

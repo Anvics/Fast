@@ -39,12 +39,12 @@ public func ==(left: LabelData, right: LabelData) -> Bool{
 
 extension UILabel: FastComponent{
     public typealias Data = LabelData
-    public var event: SafeSignal<Void> { return SafeSignal(just: ()) }
+    public var event: SafeSignal<Void> { SafeSignal(just: ()) }
     
     public func update(data: LabelData) {
-        resolve(data.text) { self.text = $0 }
-        resolve(data.textColor) { self.textColor = $0 }
-        resolve(data.font) { self.font = $0 }
+        resolve(data.text) { text = $0 }
+        resolve(data.textColor) { textColor = $0 }
+        resolve(data.font) { font = $0 }
         baseUpdate(with: data.viewData)
     }
 }

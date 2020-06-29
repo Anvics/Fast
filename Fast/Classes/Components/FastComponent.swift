@@ -62,10 +62,7 @@ public extension FastAnimatableComponent{
     }
     
     var animation: FastAnimation? {
-        get {
-            if let anim = objc_getAssociatedObject(self, &FastComponentKeys.Animation){ return anim as? FastAnimation }
-            return nil
-        }
+        get { objc_getAssociatedObject(self, &FastComponentKeys.Animation) as? FastAnimation }
         set {
             objc_setAssociatedObject(self, &FastComponentKeys.Animation, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }

@@ -1,0 +1,6 @@
+framework module FastArchitecture {
+  umbrella header "FastArchitecture-umbrella.h"
+
+  export *
+  module * { export * }
+}
