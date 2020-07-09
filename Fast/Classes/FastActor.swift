@@ -83,15 +83,15 @@ public class FastRouter{
         route(to: link.instantiate(), transition: transition, animated: animated)
     }
     
-    @discardableResult public func route<Module: FastConfigurator>(module: Module.Type, data: Module.RequiredData, transition: FastTransitionType = .show, animated: Bool = true, outputListener: ((Module.OutputAction) -> Void)? = nil) -> FastModuleData<Module.InputAction>{
+    @discardableResult public func route<Module: FastConfigurator>(_ module: Module.Type, data: Module.RequiredData, transition: FastTransitionType = .show, animated: Bool = true, outputListener: ((Module.OutputAction) -> Void)? = nil) -> FastModuleData<Module.InputAction>{
         let config = Module()
         let data = config.create(data: data, rootController: transition.isEmbedding ? rootController : nil, outputListener: outputListener)
         route(to: data.controller, transition: transition, animated: animated)
         return data
     }
     
-    @discardableResult public func route<Module: FastConfigurator>(module: Module.Type, transition: FastTransitionType = .show, animated: Bool = true, outputListener: ((Module.OutputAction) -> Void)? = nil) -> FastModuleData<Module.InputAction> where Module.RequiredData == Void{
-        return route(module: module, data: (), transition: transition, animated: animated, outputListener: outputListener)
+    @discardableResult public func route<Module: FastConfigurator>(_ module: Module.Type, transition: FastTransitionType = .show, animated: Bool = true, outputListener: ((Module.OutputAction) -> Void)? = nil) -> FastModuleData<Module.InputAction> where Module.RequiredData == Void{
+        return route(module, data: (), transition: transition, animated: animated, outputListener: outputListener)
     }
     
     public func close(type: FastRouteCloseType = .close, animated: Bool = true){
@@ -129,6 +129,10 @@ public class FastActor<Action, InputAction, OutputAction>: FastRouter {
     public func output(_ action: OutputAction){
         outputReducer(action)
     }
-    
+}
 
+extension FastActor where OutputAction == FastEmptyAction{
+    public func output(){
+        outputReducer(FastEmptyAction())
+    }
 }

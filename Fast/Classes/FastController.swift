@@ -79,7 +79,7 @@ public extension FastController{
     
     func component<Module: FastConfigurator>(module: Module.Type, data: Module.RequiredData, transition: FastTransitionType) -> FastModuleComponent<Module>{
         let component = FastModuleComponent(module: module)
-        component.input = store.router.route(module: module, data: data, transition: transition, animated: true, outputListener: component.event.next).inputActionListener
+        component.input = store.router.route(module, data: data, transition: transition, animated: true, outputListener: component.event.next).inputActionListener
         return component
     }
 }

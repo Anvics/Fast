@@ -9,6 +9,7 @@
 import UIKit
 
 public class FastEmptyAction: Equatable{
+    public init(){}
     public static func ==(lhs: FastEmptyAction, rhs: FastEmptyAction) -> Bool { true }
 }
 

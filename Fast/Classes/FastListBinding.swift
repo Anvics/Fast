@@ -16,6 +16,7 @@ public protocol FastListConnectorType: class{
     typealias CellPressedListener = (Int) -> Void
     
     var reducer: Reducer? { get set }
+    var shouldIgnoreDuplicates: Bool { get }
     var cellPressed: CellPressedListener? { get set }
     
     func update(with: [Data])
@@ -36,13 +37,15 @@ public class FastCollectionConnector<Model: Equatable, Cell: UICollectionViewCel
     var items: [Model] = []
     
     public var reducer: Subject<Action, Never>?
+    public let shouldIgnoreDuplicates: Bool
     public let reloadList: (() -> Void)
     public var cellPressed: CellPressedListener?
 
-    public init(_ collection: UICollectionView, size: CGSize, setuper: @escaping Setuper) {
+    public init(_ collection: UICollectionView, size: CGSize, shouldIgnoreDuplicates: Bool = true, setuper: @escaping Setuper) {
         reloadList = { [weak collection] in collection?.reloadData() }
         self.size = size
         self.setuper = setuper
+        self.shouldIgnoreDuplicates = shouldIgnoreDuplicates
         super.init()
         collection.connector = self
     }
@@ -83,12 +86,14 @@ public class FastTableConnector<Model: Equatable, Cell: UITableViewCell, Action>
     var items: [Model] = []
     
     public var reducer: Subject<Action, Never>?
+    public let shouldIgnoreDuplicates: Bool
     public let reloadList: (() -> Void)
     public var cellPressed: CellPressedListener?
 
-    public init(_ table: UITableView, setuper: @escaping Setuper) {
+    public init(_ table: UITableView, shouldIgnoreDuplicates: Bool = true, setuper: @escaping Setuper) {
         reloadList = { [weak table] in table?.reloadData() }
         self.setuper = setuper
+        self.shouldIgnoreDuplicates = shouldIgnoreDuplicates
         super.init()
         table.connector = self
     }
@@ -114,6 +119,7 @@ public class FastTableConnector<Model: Equatable, Cell: UITableViewCell, Action>
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         cellPressed?(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -124,6 +130,7 @@ public class FastSectionTableConnector<Section: Equatable, Item: Equatable, Sect
 
     public var itemsExtractor: ((Section) -> [Item])?
     public var reducer: Subject<Action, Never>?
+    public let shouldIgnoreDuplicates: Bool
     public var sectionPressed: CellPressedListener?
     public var cellPressed: CellPressedListener?
 
@@ -134,11 +141,12 @@ public class FastSectionTableConnector<Section: Equatable, Item: Equatable, Sect
     let setuper: CellSetuper
     let shouldAddSectionTapListener: Bool
     
-    public init(_ table: UITableView, shouldAddSectionTapListener: Bool = true, sectionSetuper: @escaping SectionCellSetuper, setuper: @escaping CellSetuper) {
+    public init(_ table: UITableView, shouldAddSectionTapListener: Bool = true, shouldIgnoreDuplicates: Bool = true, sectionSetuper: @escaping SectionCellSetuper, setuper: @escaping CellSetuper) {
         reloadList = { [weak table] in table?.reloadData() }
         self.shouldAddSectionTapListener = shouldAddSectionTapListener
         self.sectionSetuper = sectionSetuper
         self.setuper = setuper
+        self.shouldIgnoreDuplicates = shouldIgnoreDuplicates
         super.init()
         table.connector = self
     }
@@ -210,8 +218,11 @@ public class FastListBinding<S, LC: FastListConnectorType>: FastBinding<S, LC.Ac
 
     public override func setup(state: Property<S>, reduce: Subject<LC.Action, Never>) {
         connector.reducer = reduce
-        _ = state.map(extractor).removeDuplicates().observeNext(with: connector.update)
-
+        if connector.shouldIgnoreDuplicates{
+            _ = state.map(extractor).removeDuplicates().observeNext(with: connector.update)
+        }else{
+            _ = state.map(extractor).observeNext(with: connector.update)
+        }
         if let action = cellAction{
             connector.cellPressed = { i in
                 if let a = action(i){ reduce.next(a) }
