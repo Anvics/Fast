@@ -17,12 +17,12 @@ public class ImageData: FastDataCreatable, Equatable{
     
     required public init(data: String?){
         if let value = data {
-            if let url = URL(string: value) {
-                self.image = nil
-                self.url = url
-            }else{
-                self.image = UIImage(named: value)
+            if let image = UIImage(named: value){
+                self.image = image
                 self.url = nil
+            }else{
+                self.image = nil
+                self.url = URL(string: value)
             }
         } else {
             self.image = nil
@@ -53,7 +53,8 @@ public class ImageData: FastDataCreatable, Equatable{
 
 public func ==(left: ImageData, right: ImageData) -> Bool{
     return left.image == right.image &&
-        left.viewData == right.viewData
+        left.viewData == right.viewData &&
+        left.url == right.url
 }
 
 extension UIImageView: FastComponent{
@@ -64,4 +65,8 @@ extension UIImageView: FastComponent{
         resolve(data.url) { kf.setImage(with: $0) }
         baseUpdate(with: data.viewData)
     }
+}
+
+extension UIImage{
+    public var fastData: ImageData{ ImageData(image: self) }
 }

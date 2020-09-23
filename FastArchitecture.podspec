@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FastArchitecture'
-  s.version          = '1.4.1'
+  s.version          = '1.4.2'
   s.summary          = 'Evolution of Amber, Aurum architecture'
 
 # This description is used to generate tags and improve search results.

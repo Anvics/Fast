@@ -58,7 +58,7 @@ public class FastRouter{
     public weak var rootController: UIViewController?
     public weak var controller: UIViewController?
     
-    init(rootController: UIViewController?, controller: UIViewController?) {
+    public init(rootController: UIViewController?, controller: UIViewController?) {
         self.rootController = rootController ?? controller
         self.controller = controller
     }
