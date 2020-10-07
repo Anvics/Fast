@@ -37,7 +37,7 @@
 		1C0CAE91D4A51BDD08084B4E46B1F768 /* FastAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82128DABDFE29F5B06B1C9C228779DF3 /* FastAnimation.swift */; };
 		1C4AAD7A7614A80E9F7BDB70EB52F33B /* OrderedCollectionDiff+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5096CC0EE44B4CC06328DD2F75E935A /* OrderedCollectionDiff+IndexPath.swift */; };
 		1D7F3AE47B3D0A3182B9B34FA9776647 /* FastComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7B6B9BCFB9D2CB17FFB9BAF382603 /* FastComponent.swift */; };
-		1EA63368251B362E00225649 /* FastActorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA63367251B362E00225649 /* FastActorExtensions.swift */; };
+		1E6AAABF252DC39D0031060F /* FastActorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6AAABE252DC39D0031060F /* FastActorExtensions.swift */; };
 		1EDD87D11916A866AB37CFB180E79721 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD4431F39A3508483C924B87EE44D /* Differ.framework */; };
 		1FDE321DDEC2AB7383DC6A1A12FDFE7D /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF51280C9917C3F2C35613688713634 /* UISwitch.swift */; };
 		2288EE28CA56EA4BB6C595ED8732355E /* Differ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9905EE9966E4D10A2728471231384190 /* Differ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -307,7 +307,7 @@
 		1B4B696AC0297268CAC678804E6B5A8F /* SignalProtocol+Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProtocol+Event.swift"; path = "Sources/SignalProtocol+Event.swift"; sourceTree = "<group>"; };
 		1C03F2514F088D8A0CD8C18B746365F9 /* TreeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeView.swift; path = "Sources/Bond/Data Structures/TreeView.swift"; sourceTree = "<group>"; };
 		1DB3299351DB1EB6B50CFDD9C8EF1DB5 /* SignalProtocol+Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProtocol+Result.swift"; path = "Sources/SignalProtocol+Result.swift"; sourceTree = "<group>"; };
-		1EA63367251B362E00225649 /* FastActorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActorExtensions.swift; sourceTree = "<group>"; };
+		1E6AAABE252DC39D0031060F /* FastActorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastActorExtensions.swift; path = Fast/Classes/FastActorExtensions.swift; sourceTree = "<group>"; };
 		2083E35A7F6B1FB73BD0CEB95DC4E9C0 /* Differ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Differ-Info.plist"; sourceTree = "<group>"; };
 		24CCC15818C039FDFCA55E251178CFD8 /* Pods-Fast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fast_Example-frameworks.sh"; sourceTree = "<group>"; };
 		266DAC9F60E041E7B665FABE473DD759 /* Signal+Heartbeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Signal+Heartbeat.swift"; path = "Sources/Bond/Signal+Heartbeat.swift"; sourceTree = "<group>"; };
@@ -859,7 +859,7 @@
 			children = (
 				B8047A931621900BE82A64F298024843 /* Fast.swift */,
 				84F8CEA82D96F836247F1FD1988B4B6D /* FastActor.swift */,
-				1EA63367251B362E00225649 /* FastActorExtensions.swift */,
+				1E6AAABE252DC39D0031060F /* FastActorExtensions.swift */,
 				82128DABDFE29F5B06B1C9C228779DF3 /* FastAnimation.swift */,
 				5620173BF32FDFE0F95080A51497D856 /* FastBinding.swift */,
 				C075F7AF0667F5D3F24E38EBD57595BA /* FastConfigurator.swift */,
@@ -1403,7 +1403,7 @@
 				2C9D36C6ADDAC564F803702A0E60E5A3 /* FastController.swift in Sources */,
 				9DF656BB27D601F3B85922CF1303403A /* FastListBinding.swift in Sources */,
 				FF9425ECF5571E61ED3DC4A0A3E3E610 /* FastMiddleware.swift in Sources */,
-				1EA63368251B362E00225649 /* FastActorExtensions.swift in Sources */,
+				1E6AAABF252DC39D0031060F /* FastActorExtensions.swift in Sources */,
 				16D1688E996307364876DDC05D66C22C /* FastReducer.swift in Sources */,
 				EB8969F82ED32C13448EC0BA7189AC70 /* FastSimulation.swift in Sources */,
 				DFAD90A93A94859C07F05FC070B37E33 /* FastStore.swift in Sources */,
