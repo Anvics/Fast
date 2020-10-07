@@ -17,8 +17,8 @@ public protocol FastConfigurator {
     associatedtype RequiredData
     associatedtype State: FastState
     associatedtype Action
-    associatedtype InputAction: Equatable
-    associatedtype OutputAction: Equatable
+    associatedtype InputAction
+    associatedtype OutputAction
     
     typealias Actor = FastActor<Action, InputAction, OutputAction>
     typealias Reducer = FastReducerWrapper<State, Action, InputAction, OutputAction>

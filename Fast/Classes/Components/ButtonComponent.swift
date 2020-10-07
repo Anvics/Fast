@@ -25,6 +25,10 @@ public class ButtonData: FastDataCreatable, Equatable {
         self.isEnabled = nil
         self.viewData = nil
     }
+    
+    public convenience init(showsAsActive: Bool){
+        self.init(isEnabled: showsAsActive, alpha: showsAsActive ? 1 : 0.5)
+    }
 
     public init(title: String? = nil, titleColor: UIColor? = nil, image: UIImage? = nil, backgroundImage: UIImage? = nil, isEnabled: Bool? = nil, backgroundColor: UIColor? = nil, alpha: CGFloat? = nil, isHidden: Bool? = nil) {
         self.title = title

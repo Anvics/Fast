@@ -34,7 +34,7 @@ public protocol FastComponent: FastAnimatableComponent {
 }
 
 
-public class FastModuleComponent<Module: FastConfigurator>: FastComponent{
+public class FastModuleComponent<Module: FastConfigurator>: FastComponent where Module.InputAction: Equatable{
     public let event = SafeReplayOneSubject<Module.OutputAction>()
     
     typealias Input = (Module.InputAction) -> Void
