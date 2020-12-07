@@ -38,6 +38,10 @@
 		1C4AAD7A7614A80E9F7BDB70EB52F33B /* OrderedCollectionDiff+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5096CC0EE44B4CC06328DD2F75E935A /* OrderedCollectionDiff+IndexPath.swift */; };
 		1D7F3AE47B3D0A3182B9B34FA9776647 /* FastComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7B6B9BCFB9D2CB17FFB9BAF382603 /* FastComponent.swift */; };
 		1E6AAABF252DC39D0031060F /* FastActorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6AAABE252DC39D0031060F /* FastActorExtensions.swift */; };
+		1EB2B99F257E4738008102F0 /* FastListImplementationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99B257E4738008102F0 /* FastListImplementationType.swift */; };
+		1EB2B9A0257E4738008102F0 /* FastTableConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99C257E4738008102F0 /* FastTableConnector.swift */; };
+		1EB2B9A1257E4738008102F0 /* FastCollectionConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */; };
+		1EB2B9A2257E4738008102F0 /* FastBaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99E257E4738008102F0 /* FastBaseConnector.swift */; };
 		1EDD87D11916A866AB37CFB180E79721 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD4431F39A3508483C924B87EE44D /* Differ.framework */; };
 		1FDE321DDEC2AB7383DC6A1A12FDFE7D /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF51280C9917C3F2C35613688713634 /* UISwitch.swift */; };
 		2288EE28CA56EA4BB6C595ED8732355E /* Differ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9905EE9966E4D10A2728471231384190 /* Differ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,7 +132,6 @@
 		97285447F26972B07D0C72B316D8840E /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7369AF807C0C417F1FCFB71CD24F8B4 /* UISlider.swift */; };
 		9823411E3E40ECE6757A73506F13187C /* TreeChangeset+Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958B3BFBEA548345971FACDAEFE3BC6 /* TreeChangeset+Array2D.swift */; };
 		9DA901DA25E009443F765FB1684C9AF3 /* FastActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8CEA82D96F836247F1FD1988B4B6D /* FastActor.swift */; };
-		9DF656BB27D601F3B85922CF1303403A /* FastListBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD05838C08B82EC08A63A1ECCBCE80F /* FastListBinding.swift */; };
 		9F9B26A304BC0ABBB517C38AEE9B97D5 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D236C6FD5F4D8ABD8931001BB18E3E /* RequestModifier.swift */; };
 		A034ADB353DF53DF610DA4C900C5B24E /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7E787F42E724A35D3FE7CEB7CDDF9 /* Kingfisher-dummy.m */; };
 		A11803F90025294C9840CDAFBBDAF10C /* SignalProtocol+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9B08A2747C0E558F44D79A91C888B /* SignalProtocol+Sequence.swift */; };
@@ -292,7 +295,6 @@
 		0968AFE7791FA36166FDF6B10801C9ED /* NestedBatchUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NestedBatchUpdate.swift; path = Sources/Differ/NestedBatchUpdate.swift; sourceTree = "<group>"; };
 		0A27C9816489F7BD5D23E77325B9790D /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Sources/Bond/Observable.swift; sourceTree = "<group>"; };
 		0C8D4D32E7247C61F7E0511C1CCAFD76 /* SignalProtocol+Timelane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProtocol+Timelane.swift"; path = "Sources/SignalProtocol+Timelane.swift"; sourceTree = "<group>"; };
-		0CD05838C08B82EC08A63A1ECCBCE80F /* FastListBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastListBinding.swift; path = Fast/Classes/FastListBinding.swift; sourceTree = "<group>"; };
 		0DD698C73816327140AFDB62E0A8AE82 /* Accumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accumulator.swift; path = Sources/Subscribers/Accumulator.swift; sourceTree = "<group>"; };
 		0F2642D14DA0E9322C8AA198018BA6BF /* TreeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeNode.swift; path = "Sources/Bond/Data Structures/TreeNode.swift"; sourceTree = "<group>"; };
 		1133BC2E44CC79AB803D90253278E326 /* UnorderedCollectionDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnorderedCollectionDiff.swift; path = "Sources/Bond/Observable Collections/UnorderedCollectionDiff.swift"; sourceTree = "<group>"; };
@@ -308,6 +310,10 @@
 		1C03F2514F088D8A0CD8C18B746365F9 /* TreeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeView.swift; path = "Sources/Bond/Data Structures/TreeView.swift"; sourceTree = "<group>"; };
 		1DB3299351DB1EB6B50CFDD9C8EF1DB5 /* SignalProtocol+Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProtocol+Result.swift"; path = "Sources/SignalProtocol+Result.swift"; sourceTree = "<group>"; };
 		1E6AAABE252DC39D0031060F /* FastActorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastActorExtensions.swift; path = Fast/Classes/FastActorExtensions.swift; sourceTree = "<group>"; };
+		1EB2B99B257E4738008102F0 /* FastListImplementationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastListImplementationType.swift; sourceTree = "<group>"; };
+		1EB2B99C257E4738008102F0 /* FastTableConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastTableConnector.swift; sourceTree = "<group>"; };
+		1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCollectionConnector.swift; sourceTree = "<group>"; };
+		1EB2B99E257E4738008102F0 /* FastBaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastBaseConnector.swift; sourceTree = "<group>"; };
 		2083E35A7F6B1FB73BD0CEB95DC4E9C0 /* Differ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Differ-Info.plist"; sourceTree = "<group>"; };
 		24CCC15818C039FDFCA55E251178CFD8 /* Pods-Fast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fast_Example-frameworks.sh"; sourceTree = "<group>"; };
 		266DAC9F60E041E7B665FABE473DD759 /* Signal+Heartbeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Signal+Heartbeat.swift"; path = "Sources/Bond/Signal+Heartbeat.swift"; sourceTree = "<group>"; };
@@ -681,6 +687,18 @@
 			path = "../Target Support Files/ReactiveKit";
 			sourceTree = "<group>";
 		};
+		1EB2B99A257E4738008102F0 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				1EB2B99B257E4738008102F0 /* FastListImplementationType.swift */,
+				1EB2B99C257E4738008102F0 /* FastTableConnector.swift */,
+				1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */,
+				1EB2B99E257E4738008102F0 /* FastBaseConnector.swift */,
+			);
+			name = Lists;
+			path = Fast/Classes/Lists;
+			sourceTree = "<group>";
+		};
 		2ECD557712CD71488663E1ED0FA6C51D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,11 +882,11 @@
 				5620173BF32FDFE0F95080A51497D856 /* FastBinding.swift */,
 				C075F7AF0667F5D3F24E38EBD57595BA /* FastConfigurator.swift */,
 				FBB8CC4047FC30838C9574C51D9E0496 /* FastController.swift */,
-				0CD05838C08B82EC08A63A1ECCBCE80F /* FastListBinding.swift */,
 				476C4721DADE036896AFE45101163C31 /* FastMiddleware.swift */,
 				31A5948E8BD59A16725DDCBE41F769E9 /* FastReducer.swift */,
 				571CC4990D5A10C5798026A569012966 /* FastSimulation.swift */,
 				FFA350BF303AD8425C98404D72EF3B3C /* FastStore.swift */,
+				1EB2B99A257E4738008102F0 /* Lists */,
 				304D892879E86B0283AE14B76A7974E7 /* Components */,
 				FD718E71644433FCED86EC4860523644 /* Pod */,
 				47689B75D2FD6BC4CDB64CCC164CE9AE /* Support Files */,
@@ -1393,23 +1411,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE1FDB9885A3AF685E26D382BC27768 /* ButtonComponent.swift in Sources */,
+				1EB2B9A1257E4738008102F0 /* FastCollectionConnector.swift in Sources */,
 				6C80E489E75EB48027107647583087A3 /* Fast.swift in Sources */,
 				9DA901DA25E009443F765FB1684C9AF3 /* FastActor.swift in Sources */,
 				1C0CAE91D4A51BDD08084B4E46B1F768 /* FastAnimation.swift in Sources */,
+				1EB2B99F257E4738008102F0 /* FastListImplementationType.swift in Sources */,
 				B9C69AA6C134EA9960D005C0D750F9B0 /* FastArchitecture-dummy.m in Sources */,
 				470CA6D38359CE75BB87A11E3B3B796B /* FastBinding.swift in Sources */,
 				1D7F3AE47B3D0A3182B9B34FA9776647 /* FastComponent.swift in Sources */,
 				BFEFED1644269356C9FEA5827867BC20 /* FastConfigurator.swift in Sources */,
 				2C9D36C6ADDAC564F803702A0E60E5A3 /* FastController.swift in Sources */,
-				9DF656BB27D601F3B85922CF1303403A /* FastListBinding.swift in Sources */,
 				FF9425ECF5571E61ED3DC4A0A3E3E610 /* FastMiddleware.swift in Sources */,
 				1E6AAABF252DC39D0031060F /* FastActorExtensions.swift in Sources */,
 				16D1688E996307364876DDC05D66C22C /* FastReducer.swift in Sources */,
 				EB8969F82ED32C13448EC0BA7189AC70 /* FastSimulation.swift in Sources */,
 				DFAD90A93A94859C07F05FC070B37E33 /* FastStore.swift in Sources */,
+				1EB2B9A2257E4738008102F0 /* FastBaseConnector.swift in Sources */,
 				04C75A57EE023E5B11E64641FC9B4339 /* ImageComponent.swift in Sources */,
 				92D036BFC113C53EF13BE09F33DE055A /* LabelComponent.swift in Sources */,
 				0E92E6D4FA8273E0394AF3CC8E8B3007 /* ViewComponent.swift in Sources */,
+				1EB2B9A0257E4738008102F0 /* FastTableConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
