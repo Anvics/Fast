@@ -42,6 +42,7 @@
 		1EB2B9A0257E4738008102F0 /* FastTableConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99C257E4738008102F0 /* FastTableConnector.swift */; };
 		1EB2B9A1257E4738008102F0 /* FastCollectionConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */; };
 		1EB2B9A2257E4738008102F0 /* FastBaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2B99E257E4738008102F0 /* FastBaseConnector.swift */; };
+		1EB2BA18257E575F008102F0 /* FastListBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB2BA17257E575F008102F0 /* FastListBinding.swift */; };
 		1EDD87D11916A866AB37CFB180E79721 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD4431F39A3508483C924B87EE44D /* Differ.framework */; };
 		1FDE321DDEC2AB7383DC6A1A12FDFE7D /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF51280C9917C3F2C35613688713634 /* UISwitch.swift */; };
 		2288EE28CA56EA4BB6C595ED8732355E /* Differ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9905EE9966E4D10A2728471231384190 /* Differ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -314,6 +315,7 @@
 		1EB2B99C257E4738008102F0 /* FastTableConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastTableConnector.swift; sourceTree = "<group>"; };
 		1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCollectionConnector.swift; sourceTree = "<group>"; };
 		1EB2B99E257E4738008102F0 /* FastBaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastBaseConnector.swift; sourceTree = "<group>"; };
+		1EB2BA17257E575F008102F0 /* FastListBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastListBinding.swift; sourceTree = "<group>"; };
 		2083E35A7F6B1FB73BD0CEB95DC4E9C0 /* Differ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Differ-Info.plist"; sourceTree = "<group>"; };
 		24CCC15818C039FDFCA55E251178CFD8 /* Pods-Fast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fast_Example-frameworks.sh"; sourceTree = "<group>"; };
 		266DAC9F60E041E7B665FABE473DD759 /* Signal+Heartbeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Signal+Heartbeat.swift"; path = "Sources/Bond/Signal+Heartbeat.swift"; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 		1EB2B99A257E4738008102F0 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				1EB2BA17257E575F008102F0 /* FastListBinding.swift */,
 				1EB2B99B257E4738008102F0 /* FastListImplementationType.swift */,
 				1EB2B99C257E4738008102F0 /* FastTableConnector.swift */,
 				1EB2B99D257E4738008102F0 /* FastCollectionConnector.swift */,
@@ -1421,6 +1424,7 @@
 				1D7F3AE47B3D0A3182B9B34FA9776647 /* FastComponent.swift in Sources */,
 				BFEFED1644269356C9FEA5827867BC20 /* FastConfigurator.swift in Sources */,
 				2C9D36C6ADDAC564F803702A0E60E5A3 /* FastController.swift in Sources */,
+				1EB2BA18257E575F008102F0 /* FastListBinding.swift in Sources */,
 				FF9425ECF5571E61ED3DC4A0A3E3E610 /* FastMiddleware.swift in Sources */,
 				1E6AAABF252DC39D0031060F /* FastActorExtensions.swift in Sources */,
 				16D1688E996307364876DDC05D66C22C /* FastReducer.swift in Sources */,
