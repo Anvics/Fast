@@ -33,7 +33,7 @@ public class FastCollectionConnector<Model, Cell: UICollectionViewCell, Action>:
 public class FastSizedCollectionConnector<Model, Cell: UICollectionViewCell, Action>: FastCollectionConnector<Model, Cell, Action>{
     let size: CGSize
     
-    public init(_ collection: UICollectionView, cellUpdateBlock: @escaping CellUpdateBlock, size: CGSize) {
+    public init(_ collection: UICollectionView, size: CGSize, cellUpdateBlock: @escaping CellUpdateBlock) {
         self.size = size
         super.init(collection, cellUpdateBlock: cellUpdateBlock)
     }
